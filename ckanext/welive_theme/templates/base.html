@@ -2,8 +2,9 @@
 
 {% block styles %}
   {{ super() }}
-  <link rel="stylesheet" href="/welive_theme.css" />
   {% block links -%}
       <link rel="shortcut icon" href="/favicon.ico" />
   {% endblock -%}
+
+  {% resource 'welive_theme/welive_theme.css' %}
 {% endblock %}

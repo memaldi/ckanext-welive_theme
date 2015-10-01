@@ -16,7 +16,6 @@ def get_organizations():
         data_dict = {'id': organization_id,
                      'include_datasets': True}
         organization = logic.get_action('organization_show')(context, data_dict)
-        log.debug(organization)
         organization_list.append(organization)
     return organization_list
 
