@@ -1,0 +1,38 @@
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1">
+      <div class="span6 col1">
+        {% block promoted %}
+          {% snippet 'home/snippets/promoted.html' %}
+        {% endblock %}
+      </div>
+      <div class="span6 col2">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+    {% with row = 2, col = 1 %}
+      {% for organization in h.get_organizations() %}
+          {% if loop.index is odd %}
+            <div class="row row{{row}}">
+            {% set col = 1 %}
+          {% endif %}
+          <div class="span6 col{{col}}">
+            <div class="box">
+              {% snippet 'snippets/organization_item.html', organization=organization, truncate=50, truncate_title=35 %}
+            </div>
+          </div>
+          {% if loop.index is even %}
+            </div>
+            {% set row = row + 1 %}
+          {% endif %}
+          {% set col = col + 1 %}
+      {% endfor %}
+    {% endwith %}
+  </div>
+</div>
