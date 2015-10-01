@@ -1,0 +1,45 @@
+.account-masthead {
+    background-color: rgb(52, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.account-masthead .account ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.account-masthead .account ul li a:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+.homepage .module-search .module-content {
+  background-color: rgb(52, 51, 51);
+}
+
+.homepage .module-search .tags {
+  background-color: rgb(52, 51, 51);
+}
+
+.site-footer {
+  background: rgb(52, 51, 51);
+}
+
+.masthead {
+  min-height: 55px;
+  color: #ffffff;
+  background: rgb(255, 255, 255) url("../../../base/images/bg.png");
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.masthead .nav>li>a, .masthead .nav>li>a:focus, .masthead .nav>li>a:hover, .masthead .nav>.active>a, .masthead .nav>.active>a:hover, .masthead .nav>.active>a:focus {
+  color: rgb(52, 51, 51)
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+  background-color: rgb(207, 207, 207);
+}
+
+.account-masthead .account .notifications a span.badge {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
